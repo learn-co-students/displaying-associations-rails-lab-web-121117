@@ -1,0 +1,4 @@
+<!-- lists songs in 'Artist Name - Song Title' format (FAILED - 5)
+  links to the artist (FAILED - 6) -->
+
+<p><%= link_to "#{@song.artist_name} - #{@song.title}", artist_path(@song.artist) %></p>
