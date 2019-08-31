@@ -1,0 +1,10 @@
+<!-- links to the artist's songs by title (FAILED - 1)
+lists all of the artist's songs (FAILED - 2)
+lists the artists (FAILED - 3)
+shows the song count for each artist (FAILED - 4) -->
+
+<% @artists.each do |a| %>
+  <ul>
+    <li><%= link_to a.name, artist_path(a) %> - <%= a.song_count %> songs</li>
+  </ul>
+<% end %>
